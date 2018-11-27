@@ -10,4 +10,5 @@ var config = {
   };
   firebase.initializeApp(config);
 
+// merhaba!
   
