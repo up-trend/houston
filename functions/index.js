@@ -21,8 +21,10 @@ exports.addUserToDatabase = functions.auth.user().onCreate((user) => {
     var docRef = db.collection('kullanicilar').doc();
 
 var setUser = docRef.set({
-  name: user.displayName,
+  name: user.displayName === null ? user.email: user.displayName, 
+
   
 });
-      
+    console.log("User Created...");
+    return setUser
     });
