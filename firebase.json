@@ -13,7 +13,7 @@
     "source": "functions"
   },
   "hosting": {
-    "public": "houstonweb/build",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
