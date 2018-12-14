@@ -1,19 +1,43 @@
 <html>
-  <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
-  <script>
-      // Initialize Firebase
-      "https://www.gstatic.com/firebasejs/5.5.9/firebase.js"
-      var config = {
-          apiKey: "AIzaSyDrX7YK1beCgxXA9Q6ftpbrdu8iQdod2ro",
-          authDomain: "testhoustongroup.firebaseapp.com",
-          databaseURL: "https://testhoustongroup.firebaseio.com",
-          projectId: "testhoustongroup",
-          storageBucket: "testhoustongroup.appspot.com",
-          messagingSenderId: "766386174489"
-        };
-        firebase.initializeApp(config);
-  </script>
-  <title>Houston Chat</title>
-  <h1>Houston Chat App</h1>
-  <p>This is it boys!</p>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  "https://www.gstatic.com/firebasejs/5.5.9/firebase.js"
+  var config = {
+    apiKey: "AIzaSyDrX7YK1beCgxXA9Q6ftpbrdu8iQdod2ro",
+    authDomain: "testhoustongroup.firebaseapp.com",
+    databaseURL: "https://testhoustongroup.firebaseio.com",
+    projectId: "testhoustongroup",
+    storageBucket: "testhoustongroup.appspot.com",
+    messagingSenderId: "766386174489"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vuejs-datepicker"></script>
+<script src="index.js" defer></script>
+
+<title>Houston Chat</title>
+<h1>Houston Chat App</h1>
+
+<body>
+  <div id="firebaseui-auth-container"></div>
+    <div id="signup">
+        <form>
+            <input type="text" placeholder="Email">
+            <br>
+            <input type="text" placeholder="Password">
+            <br>
+            <input type="text" placeholder="Confirm Password">
+            <br>
+            <datepicker placeholder="Date of birth"></datepicker>
+            <br>
+            <a href="https://testhoustongroup.firebaseapp.com/">Sign Up</a>
+        </form>
+    </div>
+</body>
 </html>
